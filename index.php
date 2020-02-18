@@ -27,7 +27,7 @@
 					<hr>
 					<div class="panel-body">
 						<div class="input-group">
-						<input id="input-search-artist" type="text" value="bilal" class="form-control" placeholder="Search Artist">
+						<input id="input-search-artist" type="text" value="" class="form-control" placeholder="Search Artist Like Bilal...">
 						<div class="input-group-append">
 								<button id="btn-search-artist" class="btn btn-secondary" type="button">
 									Search

@@ -150,7 +150,7 @@ $(document).ready(function() {
 
                      $.each(result,function(i,value) {
 
-                               html +='<div class="card" style="width: 18rem;"> <div class="card-body"><h5 class="card-title">Events Details</h5><hr><ul class="list-group list-group-flush"><li class="list-group-item">Country : '+value.venue.country+'</li><li class="list-group-item">City : '+value.venue.city+'</li><li class="list-group-item">Venue : '+value.venue.name+'</li><li class="list-group-item">Venue : '+value.datetime+'</li><li class="list-group-item">Location :<a href="https://maps.google.com/?q='+value.venue.latitude+','+value.venue.longitude+'" class="card-link" target="blank">View on Google Maps</a></li></ul><p class="card-text"></p></div></div>';
+                               html +='<div class="card" style="width: 18rem;"> <div class="card-body"><h5 class="card-title">Events Details</h5><hr><ul class="list-group list-group-flush"><li class="list-group-item">Country : '+value.venue.country+'</li><li class="list-group-item">City : '+value.venue.city+'</li><li class="list-group-item">Venue : '+value.venue.name+'</li><li class="list-group-item">Venue : '+new Date(value.datetime).toLocaleString()+'</li><li class="list-group-item">Location :<a href="https://maps.google.com/?q='+value.venue.latitude+','+value.venue.longitude+'" class="card-link" target="blank">View on Google Maps</a></li></ul><p class="card-text"></p></div></div>';
 
                               
                               if ((i+1) % 2 ===0) {
