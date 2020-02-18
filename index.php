@@ -27,7 +27,7 @@
 					<hr>
 					<div class="panel-body">
 						<div class="input-group">
-						<input id="input-search-artist" type="text" class="form-control" placeholder="Search Artist">
+						<input id="input-search-artist" type="text" value="bilal" class="form-control" placeholder="Search Artist">
 						<div class="input-group-append">
 								<button id="btn-search-artist" class="btn btn-secondary" type="button">
 									Search
@@ -42,6 +42,15 @@
 						
 
 						<div id="div-view-artist">
+							
+
+						</div>
+
+						<div id="div-events-msg" style="margin-top:15px">
+							
+						</div>
+						<div id="div-view-artist-events">
+
 							
 
 						</div>
