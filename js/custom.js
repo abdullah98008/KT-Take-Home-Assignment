@@ -22,6 +22,12 @@ $(document).ready(function() {
           //Getting  and setting Inputs
 
           var search_term = $('#input-search-artist').val();
+
+          if (search_term.length===0) {
+             div_bsearch_msg.html('<div class="panel-heading"><h3 class="panel-title">Please Input Artist Name</h3></div>');
+             return false;
+          }
+
           var tmp_url = URL+'/artists/'+search_term;
 
          
