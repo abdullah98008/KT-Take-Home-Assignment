@@ -53,13 +53,14 @@ $(document).ready(function() {
 
                      // making a template 
 
-                    const Item = ({ url, thumb_url, name }) => `
+                    const Item = ({ url, thumb_url, name, facebook_page_url }) => `
                               <div class="card" style="width: 18rem;">
                                 <img src="${thumb_url}" class="card-img-top" alt="...">
                                 <div class="card-body">
                                   <h5 class="card-title">${name}</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="${url}" target="blank" class="btn btn-primary">FB</a>
+                                  <a href="${facebook_page_url}" target="blank">facebook.com/${name}</a>
+                                  <p class="card-text">Click the link below to view the ${name} Upcoming Event List</p>
+                                  <a href="${url}" target="blank" class="btn btn-primary">Click Here</a>
                                 </div>
                               </div>
                               `;
