@@ -24,15 +24,29 @@
 					<div class="panel-heading">
 						<h3 class="panel-title">Artist Linkedin</h3>
 					</div>
+					<hr>
 					<div class="panel-body">
 						<div class="input-group">
-						<input type="text" class="form-control" placeholder="Search Artist">
+						<input id="input-search-artist" type="text" class="form-control" placeholder="Search Artist">
 						<div class="input-group-append">
 								<button id="btn-search-artist" class="btn btn-secondary" type="button">
 									Search
 								</button>
 							</div>
 						</div>
+
+						<hr>
+						<div id="div-bsearch-msg">
+							
+						</div>
+						
+
+						<div id="div-view-artist">
+							
+
+						</div>
+
+						
 					</div>
 				</div>
 			
