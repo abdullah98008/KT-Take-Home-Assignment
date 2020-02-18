@@ -6,6 +6,7 @@ $(document).ready(function() {
     var URL = 'https://rest.bandsintown.com';
     var APP_ID ='test';
     var div_bsearch_msg= $('#div-bsearch-msg');
+    var div_view_artist= $('#div-view-artist')
 
 
      //Search Button functionality start
@@ -34,7 +35,7 @@ $(document).ready(function() {
                },
                success: function(result){
                
-
+                    console.log(result);
                     if (jQuery.isEmptyObject(result)) { // check if results object is empty
 
                           // setting a msg
@@ -43,7 +44,7 @@ $(document).ready(function() {
 
                           // clearing the existing html record in dom
 
-                          $('#div-view-artist').html('');
+                          div_view_artist.html('');
                           return false;
                     }
 
@@ -65,7 +66,7 @@ $(document).ready(function() {
 
                     // setting a msg
 
-                    $('#div-view-artist').html([result].map(Item).join(''));
+                    div_view_artist.html([result].map(Item).join(''));
 
                     
                },
