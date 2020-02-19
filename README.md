@@ -6,6 +6,17 @@ Author: Abullah
 
 Getting Started
 
+Installing
+
+1.Just Clone directly in to your Git Bash/3rd party tool. (https://github.com/abdullah98008/KT-Take-Home-Assignment)
+2.Download the folder as zip and unzip in the apache folder and access the folder in browser.
+
+
+Note: IF PHP is not installed.
+1. Download the folder as zip and unzip in the folder.
+2. Go to include folder and copy the code from and header and footer file and place into code into header and footer of index.php file.
+3. In the last just change the index.php to index.html and access the index.html in the browser.
+
 
 ////////////////////////////////////////////////////////
 		Directory Structure
