@@ -28,15 +28,16 @@ KT-Take-Home-Assignment/
 	css/-------------------------CSS files--------------------
       
       lib/-------------------------CSS libraries--------------------
-   js/-------------------------JS files--------------------
+
+      js/-------------------------JS files--------------------
       
-      lib/------------------------- Jquery libraries--------------------
+      	lib/------------------------- Jquery libraries--------------------
     
     include/--------------------common section will have application level resources  like header footer          
 
     document/--------------------contains project related documents            
- 
- index.php  -------------------- main file
+
+    index.php  -------------------- main file
 
 
 
