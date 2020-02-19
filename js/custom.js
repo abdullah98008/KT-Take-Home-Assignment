@@ -55,8 +55,8 @@ $(document).ready(function() {
                },
                success: function(result){
                
-                    console.log(result);
-                    if (jQuery.isEmptyObject(result)) { // check if results object is empty
+                    console.log(result.error);
+                    if (jQuery.isEmptyObject(result) ||  result.error =="Not Found") { // check if results object is empty
 
                           // setting a msg
                           div_bsearch_msg.html('<div class="panel-heading"><h3 class="panel-title">Search Results: Sorry, No Record found</h3></div>');
@@ -69,6 +69,7 @@ $(document).ready(function() {
                           return false;
                     }
 
+                  
                      // setting a msg
                     div_bsearch_msg.html('<div class="panel-heading"><h3 class="panel-title">Search Results: '+[result].length+' Record found</h3></div>');
 
@@ -157,7 +158,7 @@ $(document).ready(function() {
                
                   //  console.log(result);
                     //  return false;
-                    if (jQuery.isEmptyObject(result)) { // check if results object is empty
+                    if (jQuery.isEmptyObject(result) ||  result.error =="Not Found") { // check if results object is empty
 
                           // setting a msg
                           div_events_msg.html('<div class="panel-heading"><h3 class="panel-title">Sorry, No Events found</h3></div>');
