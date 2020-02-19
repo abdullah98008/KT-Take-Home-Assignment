@@ -18,9 +18,9 @@ Note: IF PHP is not installed.
 3. In the last just change the index.php to index.html and access the index.html in the browser.
 
 
-////////////////////////////////////////////////////////
-		Directory Structure
-///////////////////////////////////////
+
+#Directory Structure
+
 
 
 KT-Take-Home-Assignment/
@@ -42,9 +42,8 @@ KT-Take-Home-Assignment/
 
 
 
-////////////////////////////////////////////////////////
-		Documents Info
-///////////////////////////////////////
+# Documents Info
+
 
 1.First conisder Requriemnt document as SRS.pdf
 
