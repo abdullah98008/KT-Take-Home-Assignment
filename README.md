@@ -44,6 +44,9 @@ eg: (CompanyName-DOC Name -Requriment Name-Requriment Count Number) which will b
  3.2 For Bug Report ID (CompanyName-DOC Name -Requriment Name-Requriment Count Number -Bug-Bug Count Number ).
  3.3 For Git column we need to put the git hash code of that requirement (comment must contain Requirement ID)
 
+4. Testcase Document contains all the testcases with requirements and also with testcase status either they are pass while testing or fail. Testcases those got fail there
+BUG ID has been generated in RTM document and after testing there status has been updated. 
+
 Question: Why I used the tracebility matrix?
 Answer: 1) The Requirements Traceability Matrix (RTM) is a document that links requirements throughout the validation process. 
 		2) The purpose of the Requirements Traceability Matrix is to ensure that all requirements defined for a system are tested in the test protocols.
