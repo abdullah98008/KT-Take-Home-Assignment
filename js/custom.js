@@ -11,6 +11,17 @@ $(document).ready(function() {
     var div_events_msg= $('#div-events-msg');
     
 
+    /**
+     * when user input the artist name and click on the Search Butoon then Search Button function will trigger and grab the value of input
+     * and pass the value with app_id to url artists/{artistname} with GET requeist using AJAX Promise.
+     * Ajax States: 
+     *      beforeSend: Just poping a msg to user that search is in progress just to engage the user.
+     *      Sucess: compling the result using HMTL template and appending in the DOM.
+     *      error :  Just checking if something went wrong during request and pop a msg to user.
+     *
+     * 
+     */
+
 
      //Search Button functionality start
 
@@ -107,6 +118,17 @@ $(document).ready(function() {
 
 
 
+      /**
+     * when user Click on the Event Button then Event Button function will trigger and grab the name of the arist 
+     * and pass the value with app_id to url artists/{artistname}/events with GET request using AJAX Promise.
+     * Ajax States: 
+     *      beforeSend: Just poping a msg to user that search is in progress just to engage the user.
+     *      Sucess: compling the result using HMTL template and appending in the DOM.
+     *      error :  Just checking if something went wrong during request and pop a msg to user.
+     *
+     * 
+     */
+
      //Event Button functionality start
      $(document).on("click","#btn-artist-events",function(e) {
 
@@ -156,7 +178,7 @@ $(document).ready(function() {
 
                      $.each(result,function(i,value) {
 
-                               html +='<div class="card" style="width: 18rem;"> <div class="card-body"><h5 class="card-title">Events Details</h5><hr><ul class="list-group list-group-flush"><li class="list-group-item">Country : '+value.venue.country+'</li><li class="list-group-item">City : '+value.venue.city+'</li><li class="list-group-item">Venue : '+value.venue.name+'</li><li class="list-group-item">Venue : '+new Date(value.datetime).toLocaleString()+'</li><li class="list-group-item">Location :<a href="https://maps.google.com/?q='+value.venue.latitude+','+value.venue.longitude+'" class="card-link" target="blank">View on Google Maps</a></li></ul><p class="card-text"></p></div></div>';
+                               html +='<div class="card" style="width: 18rem;"> <div class="card-body"><h5 class="card-title">Events Details</h5><hr><ul class="list-group list-group-flush"><li class="list-group-item">Country : '+value.venue.country+'</li><li class="list-group-item">City : '+value.venue.city+'</li><li class="list-group-item">Venue : '+value.venue.name+'</li><li class="list-group-item">Date : '+new Date(value.datetime).toLocaleString()+'</li><li class="list-group-item">Location :<a href="https://maps.google.com/?q='+value.venue.latitude+','+value.venue.longitude+'" class="card-link" target="blank">View on Google Maps</a></li></ul><p class="card-text"></p></div></div>';
 
                               
                               if ((i+1) % 2 ===0) {
