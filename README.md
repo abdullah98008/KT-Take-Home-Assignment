@@ -6,7 +6,7 @@ Author: Abullah
 
 Getting Started
 
-Installing
+Project Setup
 
 1.Just Clone directly in to your Git Bash/3rd party tool. (https://github.com/abdullah98008/KT-Take-Home-Assignment)
 2.Download the folder as zip and unzip in the apache folder and access the folder in browser.
@@ -24,15 +24,17 @@ Note: IF PHP is not installed.
 
 
 KT-Take-Home-Assignment/
-
-   css/-------------------------CSS files--------------------
+	
+	css/-------------------------CSS files--------------------
+      
       lib/-------------------------CSS libraries--------------------
    js/-------------------------JS files--------------------
+      
       lib/------------------------- Jquery libraries--------------------
     
-   include/--------------------common section will have application level resources  like header footer          
+    include/--------------------common section will have application level resources  like header footer          
 
-   document/--------------------contains project related documents            
+    document/--------------------contains project related documents            
  
  index.php  -------------------- main file
 
