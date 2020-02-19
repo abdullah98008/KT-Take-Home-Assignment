@@ -19,7 +19,7 @@ Note: IF PHP is not installed.
 
 
 
-#Directory Structure
+# Directory Structure
 
 
 
